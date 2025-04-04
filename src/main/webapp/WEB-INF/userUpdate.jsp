@@ -9,11 +9,12 @@
     <body>
         <h1>Editar Usuario</h1>
         <form action="/home/update" method="post">
-            <input type="hidden" name="id" value="${user.id}" />
+            <input type="number" name="id" value="${usuario.id}" />
+
             <label>Nome</label>
-            <input type="text" name="Nome" value="${user.nome}"/>
+            <input type="text" name="nome" value="${usuario.nome}"/>
             <label>Idade</label>
-            <input type="number" name="Idade" value="${user.idade}"/>
+            <input type="number" name="idade" value="${usuario.idade}"/>
             <button type="submit">Salvar</button>
         </form>
     </body>

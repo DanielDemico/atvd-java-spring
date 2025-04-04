@@ -63,7 +63,8 @@ public class userController{
     public String update(
         @RequestParam("id") long id, 
         @RequestParam("nome") String nome,
-        @RequestParam("idade") int idade){
+        @RequestParam("idade") int idade
+        ){
         Optional<UserModel> resultado = usuarioRepo.findById(id);
         if (resultado.isPresent()){
             resultado.get().setNome(nome);
